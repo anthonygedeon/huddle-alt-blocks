@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color */
+    --primary-clr: hsl(322, 100%, 66%);
+    --neutral-pale: hsl(193, 100%, 96%);
+    --neutral-dark: hsl(192, 100%, 9%);
+    --gray-blue: hsl(208, 11%, 55%);
+
+    /* Fonts */
+    --font-body-size: 18px;
+    --headings: 'Poppins', sans-serif;
+    --body-and-call: 'Open Sans', sans-serif;
+
+    /* Spacing */
+
+}
