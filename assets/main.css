@@ -19,3 +19,11 @@
     /* Spacing */
 
 }
+
+.header {
+    margin: 2% 5%;
+}
+
+.logo-container__logo {
+    height: 20px;
+}
