@@ -3,6 +3,7 @@ VARIABLES
 ---------------------------------------------*/
 :root {
 
+    --primary-white: #ffffffff;
     --primary-color:  hsl(322, 100%, 66%);
 
     --neutral-pale-cyan: hsl(193, 100%, 96%);
@@ -72,11 +73,41 @@ MIXINS
 /// Button styling
 @mixin button-component() {
     color: var(--primary-white);
-    padding: 1em 0;
-    width: 9rem;
+    padding: 0.5em 1.5em;
+
     border-radius: 3em;
-    font-weight: var(--font-weight-bold);
-    box-shadow: 0px 4px 9px 1px hsla(12, 88%, 59%, 0.65);
+    font-family: var(--primary-heading-font);
+    font-weight: var(--body-weight-bold);
+    font-size: 0.7rem;
+    cursor: pointer;
+    
+    &__primary {
+        
+        padding: 0.8em;
+        background-color: var(--primary-color);
+        width: 100%;
+        max-width: 200px;
+
+        @include check-media('medium') {
+            padding: 1em; 
+        }
+    }
+
+    &--nav {
+        max-width: 110px;
+        font-size: 0.7rem;
+        padding: 0.3em 1.7em;
+        box-shadow: 0 3px 3px 0px #5f5f5f40;
+        color: var(--neutral-dark-cyan);
+        background-color: var(--primary-white);
+
+        @include check-media('medium') {
+            max-width: 140px;
+            padding: 1em 2em; 
+        }
+    }
+
+    
 }
 
 /// Check Media Queries
@@ -119,11 +150,27 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+h1, h2, h3 {
+    font-family: var(--primary-heading-font);
+    font-weight: var(--heading-weight);
+}
+
+a {
+    font-family: var(--secondary-body-font);
+    text-decoration: none;
+    color: inherit;
+}
+
 button {
     border: none;
     background: transparent;
 }
 
+img {
+    max-width: 100%;
+}
+
 p {
     margin: 0;
+    font-family: var(--secondary-body-font);
 }

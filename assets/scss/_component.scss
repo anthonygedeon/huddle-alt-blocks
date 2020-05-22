@@ -1,0 +1,74 @@
+.logo {
+    width: 90px;
+
+    @include check-media('medium') {
+        width: 140px; 
+    }
+}
+
+.button {
+    @include button-component
+}
+
+/*---------------------------------------------
+CARDS
+---------------------------------------------*/
+.card {
+
+    box-shadow: 0px 1px 6px 3px #d2d2d22e;;
+    border-radius: 7px;
+    padding: 4em 2em;
+    margin: 2em 0 2em 0;
+
+    @include check-media('medium') {
+        padding: 4em;
+    }
+
+    &.row {
+        @include flex();
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__image-placeholder {
+        display: flex;
+        justify-content: center;
+        @include check-media('medium') {
+            flex: 0 0 50%;
+
+        }
+    }
+
+    &__image {
+        margin-bottom: 2em;
+        width: 70%;
+    }
+
+    &__text {
+        @include check-media('medium') {
+            flex: 0 0 50%;
+
+        }
+
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 1em;
+
+        @include check-media('medium') {
+            text-align: left;
+
+        }
+    }
+
+    &__paragraph {
+        text-align: center;
+
+        @include check-media('medium') {
+            text-align: left;
+
+        }
+    }
+}
