@@ -1,0 +1,61 @@
+/*--------------------------------------------------
+VARIABLES
+--------------------------------------------------*/
+:root {
+
+    --primary-color:  hsl(322, 100%, 66%);
+
+    --neutral-pale-cyan: hsl(193, 100%, 96%);
+    --neutral-dark-cyan: hsl(192, 100%, 9%);
+    --neutral-blue: hsl(208, 11%, 55%);
+
+    --primary-heading-font: 'Poppins', sans-serif;;
+    --heading-weight: 600;
+
+    --secondary-body-font: 'Open Sans', sans-serif;
+    --body-weight-bold: 700;
+    --body-weight-regular: 400;
+
+    --body-copy-size: 1.25rem;
+
+    --max-width-desktop: 1440px;
+    --max-width-mobile: 375px;
+
+    --z-index-behind: -1
+    --z-index-0: 0;
+    --z-index-10: 10;
+    --z-index-20: 20;
+    --z-index-30: 30;
+    --z-index-40: 40;
+    --z-index-50: 50;
+    --z-index-test: 99999; // will delete later
+}
+
+/*---------------------------------------------
+BASIC STYLING
+---------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+p {
+    margin: 0;
+}

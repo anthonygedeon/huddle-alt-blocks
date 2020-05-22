@@ -1,0 +1,17 @@
+/*--------------------------------------------------
+VARIABLES
+--------------------------------------------------*/
+:root {
+  --primary-color:  hsl(322, 100%, 66%);
+  --neutral-pale-cyan: hsl(193, 100%, 96%);
+  --neutral-dark-cyan: hsl(192, 100%, 9%);
+  --neutral-blue: hsl(208, 11%, 55%);
+  --primary-heading-font: 'Poppins', sans-serif;
+  --heading-weight: 600;
+  --secondary-body-font: 'Open Sans', sans-serif;
+  --body-weight-bold: 700;
+  --body-weight-regular: 400;
+  --body-copy-size: 1.25rem;
+  --max-width-desktop: 1440px;
+  --max-width-mobile: 375px;
+}
