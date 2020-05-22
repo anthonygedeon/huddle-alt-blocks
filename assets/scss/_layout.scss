@@ -1,0 +1,18 @@
+/*---------------------------------------------
+CONTAINER/ROW
+---------------------------------------------*/
+
+.container {
+    width: 87%;
+    max-width: var(--mobile-width);
+    margin: 0 auto;
+
+    @include check-media('medium') {
+        width: 85%;
+        max-width: var(--desktop-width);
+    }
+}
+
+/*---------------------------------------------
+HEADER
+---------------------------------------------*/

@@ -1,0 +1,24 @@
+{
+  "name": "huddle-alt-blocks",
+  "version": "1.0.0",
+  "description": "![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass assets/scss/index.scss -o ./assets/styles --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonygedeon/huddle-alt-blocks.git"
+  },
+  "author": "Anthony Gedeon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthonygedeon/huddle-alt-blocks/issues"
+  },
+  "homepage": "https://github.com/anthonygedeon/huddle-alt-blocks#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
