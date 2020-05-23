@@ -114,8 +114,18 @@ FOOTER
 .footer {
     margin-top: 15em;
     background-color: var(--neutral-dark-cyan);
-    padding: 10em 0;
+    padding: 10em 0 2em 0;
     position: relative;
+
+    .row {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-bottom: 2em;
+    }
 
     .container--footer {
         position: absolute;
@@ -144,6 +154,120 @@ FOOTER
         margin-bottom: 1em;
     }
 
+    &__intro {
+        margin-bottom: 2em;
+    }
 
+    &__paragraph,
+    &__email,
+    &__number {
+        font-size: 1rem;
+        color: var(--primary-white);
+        font-weight: var(--body-weight-regular);
 
+        @include flex();
+        align-items: flex-start;
+    }
+
+    &__paragraph {
+        line-height: 25px;
+
+        @include check-media('medium') {
+            max-width: 400px;
+        }
+
+        &::before {
+            content: url(../images/icon-location.svg);
+            margin-right: 0.7em;
+            display: inline-block;
+            margin-top: 0.3em;
+            
+        }
+    }
+
+    &__number {
+        margin: 1em 0;
+        &::before {
+            content: url(../images/icon-phone.svg);
+            margin-right: 0.7em;
+            display: inline-block;
+            margin-top: 0.3em;
+            
+        }
+    }
+
+    &__email {
+        &::before {
+            content: url(../images/icon-email.svg);
+            margin-right: 0.7em;
+            display: inline-block;
+            margin-top: 0.3em;
+            
+        }
+    }
+
+    &__links {
+        @include flex();
+        flex-direction: column;
+        
+        
+
+        
+        @media screen and (max-width: 440px) {
+            
+            flex: 0 0 100%;
+        }
+    }
+
+    &__link {
+        font-size: 1rem;
+        color: var(--primary-white);
+        font-weight: var(--body-weight-regular);
+        
+        &--faq {
+            text-transform: uppercase;
+            margin-bottom: 1em;
+        }
+        
+
+        & + & {
+            margin-top: 1em;
+        }
+    }
+
+    &__medias {
+
+        margin: 3em auto 2em auto;
+
+        @include check-media('medium') {
+            margin: 0;
+        }
+    }
+
+    .fab {
+        color: var(--primary-white);
+        font-size: 16px;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 0.5em 0.8em;
+        border: 1px solid var(--primary-white);
+    }
+
+    .fab + .fab {
+        margin-left: 1em;
+    }
+
+    &__copyright {
+        font-size: 0.8rem;
+        color: var(--primary-white);
+        font-weight: var(--body-weight-regular);
+        text-align: center;
+        align-self: flex-end;
+
+        @include check-media('medium') {
+            text-align: end;
+        }
+
+        
+    }
 }

@@ -147,8 +147,14 @@ FOOTER
 .footer {
   margin-top: 15em;
   background-color: var(--neutral-dark-cyan);
-  padding: 10em 0;
+  padding: 10em 0 2em 0;
   position: relative; }
+  .footer .row {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+  .footer .logo {
+    margin-bottom: 2em; }
   .footer .container--footer {
     position: absolute;
     right: 0;
@@ -169,6 +175,74 @@ FOOTER
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1em; }
+  .footer__intro {
+    margin-bottom: 2em; }
+  .footer__paragraph, .footer__email, .footer__number {
+    font-size: 1rem;
+    color: var(--primary-white);
+    font-weight: var(--body-weight-regular);
+    display: flex;
+    align-items: flex-start; }
+  .footer__paragraph {
+    line-height: 25px; }
+    @media screen and (min-width: 768px) {
+      .footer__paragraph {
+        max-width: 400px; } }
+    .footer__paragraph::before {
+      content: url(../images/icon-location.svg);
+      margin-right: 0.7em;
+      display: inline-block;
+      margin-top: 0.3em; }
+  .footer__number {
+    margin: 1em 0; }
+    .footer__number::before {
+      content: url(../images/icon-phone.svg);
+      margin-right: 0.7em;
+      display: inline-block;
+      margin-top: 0.3em; }
+  .footer__email::before {
+    content: url(../images/icon-email.svg);
+    margin-right: 0.7em;
+    display: inline-block;
+    margin-top: 0.3em; }
+  .footer__links {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 440px) {
+      .footer__links {
+        flex: 0 0 100%; } }
+  .footer__link {
+    font-size: 1rem;
+    color: var(--primary-white);
+    font-weight: var(--body-weight-regular); }
+    .footer__link--faq {
+      text-transform: uppercase;
+      margin-bottom: 1em; }
+    .footer__link + .footer__link {
+      margin-top: 1em; }
+  .footer__medias {
+    margin: 3em auto 2em auto; }
+    @media screen and (min-width: 768px) {
+      .footer__medias {
+        margin: 0; } }
+  .footer .fab {
+    color: var(--primary-white);
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0.5em 0.8em;
+    border: 1px solid var(--primary-white); }
+  .footer .fab + .fab {
+    margin-left: 1em; }
+  .footer__copyright {
+    font-size: 0.8rem;
+    color: var(--primary-white);
+    font-weight: var(--body-weight-regular);
+    text-align: center;
+    align-self: flex-end; }
+    @media screen and (min-width: 768px) {
+      .footer__copyright {
+        text-align: end; } }
 
 .logo {
   width: 90px; }
