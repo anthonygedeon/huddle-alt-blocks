@@ -3,7 +3,7 @@ CONTAINER/ROW
 ---------------------------------------------*/
 
 .container {
-    width: 87%;
+    width: 90%;
     max-width: var(--mobile-width);
     margin: 0 auto;
 
@@ -32,14 +32,14 @@ HEADER
     padding: 2em 0;
 
     
-
     .container {
-        width: 80%;
+        width: 90%;
     }
 
     &__bg {
         position: absolute;
-        z-index: -1;
+        z-index: 0;
+        top: 0;
     }
 
     &__nav {
@@ -54,6 +54,8 @@ HEADER
     
 
     &__text {
+        z-index: 10;
+
         margin-top: 5em;
         @include flex;
         flex-direction: column;
@@ -84,6 +86,7 @@ HEADER
         text-align: center;
         font-size: 1rem;
         font-weight: var(--body-weight-regular);
+        color: var(--neutral-dark-cyan);
 
         @include check-media('medium') {
             
@@ -93,6 +96,8 @@ HEADER
     }
 
     &__image-placeholder {
+        z-index: 10;
+
         margin-top: 2em;
         @include check-media('medium') {
             margin-top: 0em;
@@ -137,21 +142,29 @@ FOOTER
     &__banner {
         position: relative;
         background: var(--primary-white);
-        padding: 4em 0;
+        padding: 3em 1em;
         max-width: 700px;
-        border-radius: 7px;
+        border-radius: 10px;
         margin: 0 auto;
-        box-shadow: 0px 1px 6px 3px #4242422e;
+        box-shadow: 0px 1px 4px 1px hsla(0, 0%, 55%, 0.212);
 
         @include flex;
         flex-direction: column;
         align-items: center;
+
+        @include check-media('medium') {
+            padding: 4em 0;
+        }
     }
 
     &__title {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 1em;
+
+        @include check-media('medium') {
+            font-size: 1.5rem;
+        }
     }
 
     &__intro {

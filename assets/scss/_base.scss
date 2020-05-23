@@ -74,6 +74,8 @@ MIXINS
 @mixin button-component() {
     color: var(--primary-white);
     padding: 0.5em 1.5em;
+    z-index: 10;
+
 
     border-radius: 3em;
     font-family: var(--primary-heading-font);

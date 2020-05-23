@@ -1,5 +1,7 @@
 .logo {
     width: 90px;
+    z-index: 10;
+
 
     @include check-media('medium') {
         width: 140px; 
@@ -21,7 +23,8 @@ CARDS
     margin: 2em 0 2em 0;
 
     @include check-media('medium') {
-        padding: 4em;
+        padding: 4em 6em;
+        margin: 3em 0;
     }
 
     &.row {
@@ -35,8 +38,16 @@ CARDS
         justify-content: center;
         @include check-media('medium') {
             flex: 0 0 50%;
-
+            &--grow {
+                order: 10;
+            }
+    
+            &--users {
+                order: 10;
+            }
         }
+        
+        
     }
 
     &__image {
@@ -59,16 +70,17 @@ CARDS
 
         @include check-media('medium') {
             text-align: left;
-
+            font-size: 2rem;
+            margin-bottom: 0.5em;
         }
     }
 
     &__paragraph {
         text-align: center;
-
+        color: var(--neutral-blue);
         @include check-media('medium') {
             text-align: left;
-
+            font-size: 1.4rem;
         }
     }
 }
